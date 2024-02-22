@@ -16,8 +16,6 @@ function Header1() {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-
-
   return (
     <Container className="mb-5" fluid>
       <Container>
@@ -44,8 +42,42 @@ function Header1() {
               <Image src="/images/ivista_logo.svg" width="300" height={100} alt='' /></Link>
           </Container>
           <ul class="navbar-nav text-center flex-grow-1 pe-3">
-            <li class="nav-item">
-              <Link class="nav-link active" aria-current="page" href="/arts/services">Services</Link></li>
+            {/* <li class="nav-item">
+              <Link class="nav-link active" aria-current="page" href="/arts/services">Services</Link>
+            </li> */}
+            <NavDropdown title="Services" id="navbarScrollingDropdown">
+              <NavDropdown.Item href="">
+                Web Design & Development
+              </NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="">
+                Search Engine Optimization
+              </NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="">
+                Search Engine Marketing
+              </NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="">
+                Social Media - Organic
+              </NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="">
+                Social Media Marketing
+              </NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="">
+                Content Development (B2B & B2C)
+              </NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="">
+                Design
+              </NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="">
+                Videos
+              </NavDropdown.Item>
+            </NavDropdown>
             <li className="divider-center">
               <hr class="m-divider" />
             </li>
@@ -99,17 +131,19 @@ function Header1() {
               <hr class="m-divider" />
             </li>
 
-            <NavDropdown title="About Us" id="navbarScrollingDropdown">
+            <NavDropdown title="About" id="navbarScrollingDropdown">
               <NavDropdown.Item href="/team">Team</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="/industries/tech">About</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="/careers">Careers</NavDropdown.Item>
             </NavDropdown>
-            <li className="divider-center">
+            {/* <li className="divider-center">
               <hr class="m-divider" />
-            </li>
-            <li class="nav-item">
+            </li> */}
+            {/* <li class="nav-item">
               <Link class="nav-link active" aria-current="page" href="/careers">Careers</Link>
-            </li>
+            </li> */}
 
             <li className="divider-center">
               <hr class="m-divider" />
