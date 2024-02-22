@@ -134,8 +134,8 @@ function Header1() {
             <NavDropdown title="About" id="navbarScrollingDropdown">
               <NavDropdown.Item href="/team">Team</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="/industries/tech">About</NavDropdown.Item>
-              <NavDropdown.Divider />
+              {/* <NavDropdown.Item href="/industries/tech">About</NavDropdown.Item>
+              <NavDropdown.Divider /> */}
               <NavDropdown.Item href="/careers">Careers</NavDropdown.Item>
             </NavDropdown>
             {/* <li className="divider-center">

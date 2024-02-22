@@ -354,6 +354,21 @@ background: rgba(255, 255, 255, 0) !important;
   font-weight: 500;
 }
 
+.h1-btn {
+  background: #fff !important;
+  color: red !important;
+  border: 0px !important;
+  width: 250px !important;
+  padding: 16px !important;
+}
+
+.h1-btn span {
+  font-size: 21px;
+  font-family: 'Poppins', sans-serif;
+  color: black;
+  font-weight: 500;
+}
+
 
 
 
