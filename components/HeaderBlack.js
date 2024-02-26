@@ -22,7 +22,8 @@ function Header1() {
         <nav class="navbar bg-color z-index-100">
           <div class="container-fluid">
             <Link class="navbar-brand" href="/">
-              <Image src="/images/ivista_logo.svg" width={200} height={40} className="img-fluid" alt='' /></Link>
+              <Image src="/images/ivista_logo.svg" width={200} height={40} className="img-fluid" alt='' />
+            </Link>
             <Button
               className={(pathname === '/arts' || pathname === '/arts/services' || pathname === '/arts/services/digital-marketing' || pathname === '/arts/services/content-development-design' || pathname === '/arts/services/design-development') ? "btn btn-outline-black" : "btn btn-outline"} type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
               <FaBars size={27}
@@ -39,7 +40,8 @@ function Header1() {
         <Offcanvas.Body>
           <Container className="text-center">
             <Link class="navbar-brand" href="/">
-              <Image src="/images/ivista_logo.svg" width="300" height={100} alt='' /></Link>
+              {/* <Image src="/images/ivista_logo.svg" width="200" height={100} alt='' /> */}
+            </Link>
           </Container>
           <ul class="navbar-nav text-center flex-grow-1 pe-3">
             {/* <li class="nav-item">
@@ -132,6 +134,13 @@ function Header1() {
             </li>
 
             <NavDropdown title="About" id="navbarScrollingDropdown">
+              <style>
+                {/* {`
+                .dropdown-menu.show{
+                  transform: translate3d(0px, 85px, 0px) !important;
+              }
+              `} */}
+              </style>
               <NavDropdown.Item href="/team">Team</NavDropdown.Item>
               <NavDropdown.Divider />
               {/* <NavDropdown.Item href="/industries/tech">About</NavDropdown.Item>
