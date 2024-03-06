@@ -22,7 +22,7 @@ const HomeBanner = () => {
                 </Row>
             </Container>
 
-            <Container className="pt-4 w-80 pb-4 pt-4">
+            {/* <Container className="pt-4 w-80 pb-4 pt-4">
                 <p className="para-text">As social developments produce both new possibilities and fresh challenges, active attempts to establish a better future for monitoring, assessment, and learning will become increasingly more crucial in the coming years. These changes in the philanthropic landscape—and the world around it—are profoundly altering the backdrop for decision-making inside social sector organisations as well as the larger practise of monitoring, evaluation, and learning.</p>
             </Container>
             <Container className=" w-80 p-5">
@@ -36,7 +36,7 @@ const HomeBanner = () => {
                         <Link className="btn-14" href="/contact-us">Contact us</Link>
                     </Col>
                 </Container>
-            </Container>
+            </Container> */}
         </>
     )
 }
