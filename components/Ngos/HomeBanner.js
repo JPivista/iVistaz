@@ -3,22 +3,25 @@ import { Container, Row, Col, Button } from 'react-bootstrap'
 import Image from 'next/image'
 import Link from 'next/link'
 import { FaArrowRight } from "react-icons/fa";
+import BannerAllPage from '../PropsShared/BannerAllPage';
 
 function HeroBanner() {
 
+  const backgroundImage = {
+    url: '/industrie/ngos_banner.jpg'
+  };
+
+  const bannerHeading = 'NOT-FOR-PROFITS/ NGOS'
+
   return (
     <>
-      <Container className="bg-white banner w-80" >
+      <Container className="w-80" >
         <Row className="d-flex align-items-center">
-          <Col lg={7} className="pl-8">
-            <h1 className="fs-21 fw-bold">NOT-FOR-PROFITS/ NGOS</h1>
-          </Col>
-          <Col lg={5} className='d-flex flex-column align-items-end'>
-            <Image src="/industries/ngo.svg" width={400} height={400} alt='' />
-          </Col>
+          <BannerAllPage backgroundImage={backgroundImage} bannerHeading={bannerHeading} />
         </Row>
       </Container>
-      <Container className="pt-4 w-80 pb-4 pt-4" >
+
+      <Container className="pt-4 w-80 pb-4 pt-4">
         <p className="text-white para-text">As social developments produce both new possibilities and fresh challenges, active attempts to establish a better future for monitoring, assessment, and learning will become increasingly more crucial in the coming years. These changes in the philanthropic landscape—and the world around it—are profoundly altering the backdrop for decision-making inside social sector organisations as well as the larger practise of monitoring, evaluation, and learning.</p>
       </Container>
       <Container className="iv-bg w-80 banner p-5">

@@ -215,6 +215,10 @@ background: #000;
     font-size: 4.5rem!important;
     font-family: 'Poppins', sans-serif;
 }
+.fs-19 {
+  font-size: 3.5rem!important;
+  font-family: 'Poppins', sans-serif;
+}
 .fs-20 {
   font-size: 2.3em;
   font-family: 'Poppins', sans-serif;  
@@ -339,6 +343,19 @@ background: rgba(255, 255, 255, 0) !important;
   background: #fff !important;  
   color:#000 !important;
   }
+
+  .btn-outline-custom{
+    background: #ED2225 !important;
+    border: 0px solid black !important;
+  }
+
+
+  .btn-outline-custom:hover{
+    background: black !important;
+    border: 0px solid black !important;
+    /* color: #ED2225 !important; */
+  }
+
 .h-btn{
   background: #fff !important;
   color: red !important;

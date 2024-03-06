@@ -3,21 +3,24 @@ import { Container, Row, Col, Button } from 'react-bootstrap'
 import Image from 'next/image'
 import Link from 'next/link'
 import { FaArrowRight } from "react-icons/fa";
+import BannerAllPage from '../PropsShared/BannerAllPage';
 
 function HeroBanner() {
 
+  const backgroundImage = {
+    url: '/industrie/automobile_banner.jpg'
+  };
+
+  const bannerHeading = 'APPLIANCES'
+
   return (
     <>
-      <Container className="bg-white banner w-80" >
+      <Container className="w-80" >
         <Row className="d-flex align-items-center">
-          <Col lg={7} className="pl-8">
-            <h1 className="fs-21 fw-bold">APPLIANCES</h1>
-          </Col>
-          <Col lg={5}>
-            <Image src="/industries/appliances.svg" width={400} height={400} alt="" />
-          </Col>
+          <BannerAllPage backgroundImage={backgroundImage} bannerHeading={bannerHeading} />
         </Row>
       </Container>
+
       <Container className="pt-4 w-80 pb-4 pt-4" >
         <p className="text-white para-text">
           The Indian Appliances and Consumer Electronics industry is expected to double to Rs.1.48 lac crore by 2025<Link href="https://retail.economictimes.indiatimes.com/news/consumer-durables-and-information-technology/consumer-electronics/indian-appliances-consumer-electronic-industry-to-double-to-rs-1-48-crore-by-2025/95568165" target='_blank' className='text-decoration-none'> according to CEAMA</Link>.  A <Link href="https://yourstory.com/2022/10/indian-online-shoppers-migh-outnumber-us-shoppers-ecommerce" target='_blank' className='text-decoration-none'>recent report</Link> by Flipkart and Bain & Co says the number of online shoppers in India is likely to <span className='fw-bold'>grow to 400 million-450 million by 2027</span> from 180 million-190 million in 2021 <span className='fw-bold'>and appliances</span> (along with mobiles and electronics) <span className='fw-bold'> will have among the highest market shares at 25-30%</span>.

@@ -3,27 +3,28 @@ import { Container, Row, Col, Button } from 'react-bootstrap'
 import Image from 'next/image'
 import Link from 'next/link'
 import { FaArrowRight } from "react-icons/fa";
+import BannerAllPage from '../PropsShared/BannerAllPage';
 
 
 
 function HeroBanner() {
 
+  const backgroundImage = {
+    url: '/industrie/hospitality_banner.jpg'
+  };
+
+  const bannerHeading = 'HOSPITALITY'
+
   return (
     <>
-      <Container className="bg-white banner w-80 d-flex flex-column justify-content-center" >
-        <Row className="d-flex flex-lg-row flex-column align-items-center justify-content-center">
-          <Col lg={7} className="pl-8">
-            <h1 className="fs-21 fw-bold">HOSPITALITY</h1>
-          </Col>
-          <Col lg={5}>
-            <Image src="/industries/hospitality.svg" width={400} height={200} alt='' className='img-fluid h-auto w-100' />
-          </Col>
+      <Container className="w-80" >
+        <Row className="d-flex align-items-center">
+          <BannerAllPage backgroundImage={backgroundImage} bannerHeading={bannerHeading} />
         </Row>
       </Container>
+
       <Container className="pt-4 w-80 pb-4 pt-4" >
         <p className="text-white para-text">In the last 12 years,<span className='fw-bold'> iVistaz has built a deep digital hospitality practice</span>.</p>
-
-
       </Container>
       <Container className="iv-bg w-80 banner p-5 d-flex flex-column justify-content-center">
         <p className="text-white para-text">We can leverage our experience<span className='fw-bold'> to grow and sustain online room revenues</span> for your properties and in turn, help to increase your<span className='fw-bold'> room occupancy, RevPAR (Revenue Per Available Room) and ADR (Average Daily Rate)</span>. We are also deeply aware that the customers of luxury hospitality brands are highly discerning, and our focus will also be to enhance their overall digital experience with engaging UX/UI and content.</p>

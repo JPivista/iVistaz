@@ -10,10 +10,6 @@ function page() {
     <Container fluid className="bg-black pb-5">
       <Header />
       <HeroBanner />
-
-
-
-
     </Container>
   )
 }

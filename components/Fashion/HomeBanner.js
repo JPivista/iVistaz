@@ -3,21 +3,24 @@ import { Container, Row, Col, Button } from 'react-bootstrap'
 import Image from 'next/image'
 import Link from 'next/link'
 import { FaArrowRight } from "react-icons/fa";
+import BannerAllPage from '../PropsShared/BannerAllPage';
 
 function HeroBanner() {
 
+  const backgroundImage = {
+    url: '/industrie/Beauty_and_wellness_banner.jpg'
+  };
+
+  const bannerHeading = 'FASHION & ACCESSORIES'
+
   return (
     <>
-      <Container className="bg-white banner w-80" >
+      <Container className="w-80" >
         <Row className="d-flex align-items-center">
-          <Col lg={7} className="pl-8">
-            <h1 className="fs-21 fw-bold">FASHION & ACCESSORIES</h1>
-          </Col>
-          <Col lg={5}>
-            <Image src="/industries/fashion.svg" width={400} height={400} alt='' />
-          </Col>
+          <BannerAllPage backgroundImage={backgroundImage} bannerHeading={bannerHeading} />
         </Row>
       </Container>
+
       <Container className="pt-4 w-80 pb-4 pt-4" >
         <p className="text-white para-text">
           According to an article by the Times of India, the fashion industry<Link href="https://timesofindia.indiatimes.com/blogs/voices/indian-apparel-and-fashion-market-in-next-five-years-industry-growth-challenges-and-opportunities/" target='_blank' className='text-decoration-none'> is poised to grow into a $106 billion industry by 2026</Link>, bringing up the Indian fashion market on maps. We will help you to capitalize on this market opportunity with robust digital solutions that include:</p>

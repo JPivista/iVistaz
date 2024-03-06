@@ -3,25 +3,26 @@ import { Container, Row, Col, Button } from 'react-bootstrap'
 import Image from 'next/image'
 import Link from 'next/link'
 import { FaArrowRight } from "react-icons/fa";
+import BannerAllPage from '../PropsShared/BannerAllPage';
 
 function HeroBanner() {
 
+  const backgroundImage = {
+    url: '/industrie/jewelry_banner.jpg'
+  };
+
+  const bannerHeading = 'JEWELRY'
+
   return (
     <>
-      <Container className="bg-white banner w-80" >
+      <Container className="w-80" >
         <Row className="d-flex align-items-center">
-          <Col lg={7} className="pl-8">
-            <h1 className="fs-21 fw-bold text-uppercase">Jewellery</h1>
-          </Col>
-          <Col lg={5}>
-            <Image src="/industries/jewelry.svg" width={400} height={400} alt='' className='img-fluid w-100 h-100' />
-          </Col>
+          <BannerAllPage backgroundImage={backgroundImage} bannerHeading={bannerHeading} />
         </Row>
       </Container>
+
       <Container className="pt-4 w-80 pb-4 pt-4" >
         <p className="text-white para-text">The Indian jewellery industry is a celebrated sector that exhibits a remarkable ability to adapt to evolving trends in response to the ever-changing needs and preferences of its customers. We will help your business keep up with this dynamic industry.</p>
-
-
       </Container>
       <Container className="iv-bg w-80 banner p-5">
         <p className="text-white para-text">Creating and improving the connection between online visitors and sales, through end-to-end services, in order to boost online conversions and sales both in-store and online.</p>

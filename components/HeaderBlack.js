@@ -25,10 +25,35 @@ function Header1() {
               <Image src="/images/ivista_logo.svg" width={200} height={40} className="img-fluid" alt='' />
             </Link>
             <Button
-              className={(pathname === '/arts' || pathname === '/arts/services' || pathname === '/arts/services/digital-marketing' || pathname === '/arts/services/content-development-design' || pathname === '/arts/services/design-development') ? "btn btn-outline-black" : "btn btn-outline"} type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              className={(
+                pathname === '/arts' ||
+                pathname === '/arts/services' ||
+                pathname === '/arts/services/digital-marketing' ||
+                pathname === '/arts/services/content-development-design' ||
+                pathname === '/arts/services/design-development')
+                ? "btn btn-outline-black"
+                : (pathname === '/service/website-design-and-development' ||
+                  pathname === '/service/search-engine-optimization' ||
+                  pathname === '/service/search-engine-marketing' ||
+                  pathname === '/service/social-media-organic' ||
+                  pathname === '/service/social-media-marketing' ||
+                  pathname === '/service/social-media-marketing' ||
+                  pathname === '/service/content-development-b2b-b2c' ||
+                  pathname === '/service/design' ||
+                  pathname === '/service/videos'
+                )
+                  ? "btn btn-outline-custom" // Change this to your desired class for /design and /about
+                  : "btn btn-outline"
+              }
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+              aria-label="Toggle navigation">
               <FaBars size={27}
                 onClick={handleShow}
-              /></Button>
+              />
+            </Button>
           </div>
         </nav>
       </Container>
@@ -48,35 +73,35 @@ function Header1() {
               <Link class="nav-link active" aria-current="page" href="/arts/services">Services</Link>
             </li> */}
             <NavDropdown title="Services" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="">
+              <NavDropdown.Item href="/service/website-design-and-development">
                 Web Design & Development
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="">
+              <NavDropdown.Item href="/service/search-engine-optimization">
                 Search Engine Optimization
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="">
+              <NavDropdown.Item href="/service/search-engine-marketing">
                 Search Engine Marketing
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="">
+              <NavDropdown.Item href="/service/social-media-organic">
                 Social Media - Organic
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="">
+              <NavDropdown.Item href="/service/social-media-marketing">
                 Social Media Marketing
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="">
+              <NavDropdown.Item href="/service/content-development-b2b-b2c">
                 Content Development (B2B & B2C)
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="">
+              <NavDropdown.Item href="/service/design">
                 Design
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="">
+              <NavDropdown.Item href="/service/videos">
                 Videos
               </NavDropdown.Item>
             </NavDropdown>

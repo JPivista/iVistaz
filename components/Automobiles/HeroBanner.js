@@ -3,19 +3,21 @@ import { Container, Row, Col, Button } from 'react-bootstrap'
 import Image from 'next/image'
 import Link from 'next/link'
 import { FaArrowRight } from "react-icons/fa";
+import BannerAllPage from '../PropsShared/BannerAllPage';
 
 function HeroBanner() {
 
+  const backgroundImage = {
+    url: '/industrie/automobile_banner.jpg'
+  };
+
+  const bannerHeading = 'AUTOMOBILES'
+
   return (
     <>
-      <Container className="bg-white banner w-80" >
+      <Container className=" w-80" >
         <Row className="d-flex align-items-center">
-          <Col lg={7} className="pl-8">
-            <h1 className="fs-21 fw-bold">AUTOMOBILES</h1>
-          </Col>
-          <Col lg={5}>
-            <Image src="/images/automobiles.svg" width={400} height={400} alt='' />
-          </Col>
+          <BannerAllPage backgroundImage={backgroundImage} bannerHeading={bannerHeading} />
         </Row>
       </Container>
       <Container className="pt-4 w-80 pb-4 pt-4" >

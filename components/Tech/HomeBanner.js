@@ -3,21 +3,24 @@ import { Container, Row, Col, Button } from 'react-bootstrap'
 import Image from 'next/image'
 import { FaArrowRight } from "react-icons/fa";
 import Link from 'next/link'
+import BannerAllPage from '../PropsShared/BannerAllPage';
+
 function HeroBanner() {
+
+  const backgroundImage = {
+    url: '/industrie/tech_banner.jpg'
+  };
+
+  const bannerHeading = 'TECH/IT'
 
   return (
     <>
-
-      <Container className="bg-white banner w-80" >
+      <Container className="w-80" >
         <Row className="d-flex align-items-center">
-          <Col lg={7} className="pl-8">
-            <h1 className="fs-21 fw-bold">TECH/IT</h1>
-          </Col>
-          <Col lg={5}>
-            <Image src='/industries/tech.svg' width={400} height={400} alt='' />
-          </Col>
+          <BannerAllPage backgroundImage={backgroundImage} bannerHeading={bannerHeading} />
         </Row>
       </Container>
+
       <Container className="pt-4 w-80 pb-4 pt-4" >
         <p className="text-white para-text">The evolving digital trends and technologies are causing a tectonic shift in digital marketing. In this scenario, iVistaz will help you keep pace and have a firm grasp on the evolving digital ecosystem to give you measurable ROI for your digital spending. Our services include:</p>
 
