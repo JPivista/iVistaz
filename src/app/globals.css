@@ -23,6 +23,9 @@ background: #3a3a3a;
 .red-50{
   color: #ed2225b0; 
 }
+.text-red {
+  color : #ED2023;
+}
 .text-offwhite{
 color:#ffffff83;  
 }
@@ -1314,8 +1317,9 @@ cursor: pointer;
     font-size:35px !important;
   }
 
-  .fs-20 {
-    font-size: 25px;
+  .fs-20, .fs-21 {
+    font-size: 25px !important;
+
   }
 
   /* Header NavBar */

@@ -13,18 +13,21 @@ function HeroBanner() {
 
   const bannerHeading = 'BEAUTY & WELLNESS'
 
+  const mobileBackgroundImage = {
+    url: '/industrie/mobile_industries_banner/beauty_and_wellness_mob_banner.jpg'
+  };
+
   return (
     <>
       <Container className="w-80" >
-        <Row className="d-flex align-items-center">
-          <BannerAllPage backgroundImage={backgroundImage} bannerHeading={bannerHeading} />
+        <Row className="d-flex flex-column justify-content-start align-items-lg-center">
+          <BannerAllPage backgroundImage={backgroundImage} bannerHeading={bannerHeading} mobileBackgroundImage={mobileBackgroundImage} />
         </Row>
       </Container>
 
       <Container className="pt-4 w-80 pb-4 pt-4" >
         <p className="text-white para-text">The beauty and wellness market has been growing at a rapid pace in India. The market in India<Link href="https://bwwellbeingworld.businessworld.in/article/How-Beauty-Wellness-Sector-Emerge-As-A-Thriving-Sector-In-India/18-10-2021-408985/" target='_blank' className='text-decoration-none'> was valued at INR 901.07 Bn in 2018 and is forecasted to reach INR 2,463.49 Bn by the year 2024</Link>.</p>
         <p className="text-white para-text">What is notable is that the beauty and wellness market today straddles the affluent as well as the middle class, the female as well as the male sexes, the synthetic brands as well as the organic brands. The sheer number of new entrants, especially in the ‘natural’, ‘vegan’ ‘safe’ and ‘sustainable’ categories is testimony to the exponential growth of the industry.</p>
-
 
       </Container>
       <Container className="iv-bg w-80 banner p-5">
