@@ -1,24 +1,31 @@
+'use client'
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 import { Col, Row } from 'react-bootstrap'
 
 const BannerAllPage = ({ backgroundImage, bannerHeading, mobileBackgroundImage }) => {
 
-    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
-    const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
+    //const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+    //const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
+    const [isMobile, setIsMobile] = useState(false);
+    const [viewportWidth, setViewportWidth] = useState(0);
 
     useEffect(() => {
         const handleResize = () => {
             setViewportWidth(window.innerWidth);
-            setIsMobile(window.innerWidth <= 768); // Set isMobile based on viewport width
+            setIsMobile(window.innerWidth <= 768);
         };
 
-        window.addEventListener('resize', handleResize);
+        // Check if window is available before adding event listener
+        if (typeof window !== 'undefined') {
+            handleResize(); // Call it initially to set the initial state
+            window.addEventListener('resize', handleResize);
 
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
-    });
+            return () => {
+                window.removeEventListener('resize', handleResize);
+            };
+        }
+    }, []);
 
 
     return (
