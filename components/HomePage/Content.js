@@ -64,7 +64,7 @@ const HomePage = () => {
           {
             menu ? (
               <>
-                <Col className="d-flex flex-column justify-content-center align-items-center text-d">
+                <Col className="d-flex flex-column justify-content-center align-items-center q">
                   <h2 className="text-white fs-60 fw-bold">WHAT DOES</h2>
                   <div class=" text-white fs-70 fw-bold">
                     PERFORMANCE
@@ -123,7 +123,8 @@ const HomePage = () => {
                         <span>Engagement</span></Link>
                     </Col>
                   </Row>
-                </Col></>
+                </Col>
+              </>
 
             ) : (
               <Col className="d-flex flex-column justify-content-center align-items-center">
@@ -138,13 +139,8 @@ const HomePage = () => {
             )
 
           }
-
         </Row>
       </Container>
-
-
-
-
 
     </>
   )

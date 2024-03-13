@@ -7,6 +7,7 @@ import Footer from '../../../components/Footer'
 import React, { useEffect } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger, ScrollToPlugin } from 'gsap/all';
+import MasteryArtsPerfomancePage from '../../../components/ivistaz/MasteryArtsPerfomancePage'
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
@@ -14,14 +15,15 @@ function ivistaz() {
 
 
   return (
-<>
-<IhomePage className="panel" />
-<Mastery className="panel"/>
-<Arts className="panel"/>
-<Performance className="panel"/>          
-<Footer/>
+    <>
+      <IhomePage className="panel" />
+      {/* <MasteryArtsPerfomancePage className="panel" />
+      <Mastery className="panel" />
+      <Arts className="panel" />
+      <Performance className="panel" /> 
+  <Footer /> */}
 
-</>
+    </>
   )
 }
 

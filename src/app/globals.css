@@ -192,6 +192,8 @@ font-family: 'Poppins', sans-serif !important;
   font-weight: 600; 
   }
 
+
+
 .iv-primary{
 color:#fff;
 border: 1px solid #fff; 
@@ -211,6 +213,12 @@ background: #000;
   font-size: 5.5rem!important;
     font-family: 'Poppins', sans-serif; 
 }  
+
+.fs-70{
+  font-size: 70px !important;
+    font-family: 'Poppins', sans-serif; 
+}  
+
 .fs-21 {
     font-size: 4.5rem!important;
     font-family: 'Poppins', sans-serif;
@@ -1250,4 +1258,79 @@ cursor: pointer;
 .industry-bullet::marker {
   color: white;
   font-size: 25px;
+}
+
+/* Homepage Hover */
+
+.mastery:hover {
+
+}
+
+.perfomance:hover {
+  background : #ED2023 !important;
+}
+.perfomance:hover .show-perfomance {
+  opacity: 1;
+}
+
+.show-perfomance , .show-art , .show-mastery {
+  opacity: 0;
+}
+
+.art:hover {
+  background : white;
+}
+
+.art:hover .art-txt {
+  color: black !important;
+}
+
+.art:hover .show-art {
+  opacity: 1;
+}
+
+.mastery:hover .show-mastery {
+  opacity:1
+}
+
+/*  */
+
+.hover-text {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.hover-text span {
+  transition: color 0.3s ease-in-out; /* Transition for smooth color change */
+}
+
+.hover-text .hovered {
+  color: red; /* Color when hovered */
+}
+
+
+@media(max-width:767px) {
+  .fs-80, .fs-70, .fs-60 {
+    font-size:35px !important;
+  }
+
+  .fs-20 {
+    font-size: 25px;
+  }
+
+  /* Header NavBar */
+  .offcanvas.offcanvas-end {
+    width: 100% !important;
+  }
+  a#navbarScrollingDropdown , a.nav-link , .nav-link:hover {
+    font-size: 28px !important;
+  }
+
+  a.dropdown-item {
+    font-size: 18px;
+  }
+  ul.navbar-nav.text-center.flex-grow-1.pe-3 {
+    padding: 0px !important;
+    margin: 0px !important;
+  }
 }
