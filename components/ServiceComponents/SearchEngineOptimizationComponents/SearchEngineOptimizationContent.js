@@ -40,14 +40,6 @@ const SearchEngineOptimizationContent = () => {
                     <p className="text-black para-text">
                         Contact us today to embark on your journey to digital success.
                     </p>
-
-                    <p className="text-black para-text">
-                        What is your web requirement today?
-                    </p>
-
-                    <h1>
-                        Add a form with a drop-down
-                    </h1>
                 </Col>
 
             </Container>
