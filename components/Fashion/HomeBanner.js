@@ -9,16 +9,22 @@ import BannerAllPage from '../PropsShared/BannerAllPage';
 function HeroBanner() {
 
   const backgroundImage = {
-    url: '/industrie/Beauty_and_wellness_banner.jpg'
+    url: '/industrie/fashion_and_accessories_banner.jpg'
   };
 
+  const mobileBackgroundImage = {
+    url: '/industrie/mobile_industries_banner/fashion_and_accessories_mob_banner.jpg'
+  }
+
   const bannerHeading = 'FASHION & ACCESSORIES'
+
+
 
   return (
     <>
       <Container className="w-80" >
         <Row className="d-flex align-items-center">
-          <BannerAllPage backgroundImage={backgroundImage} bannerHeading={bannerHeading} />
+          <BannerAllPage backgroundImage={backgroundImage} bannerHeading={bannerHeading} mobileBackgroundImage={mobileBackgroundImage} />
         </Row>
       </Container>
 

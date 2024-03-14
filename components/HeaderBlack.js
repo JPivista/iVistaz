@@ -100,10 +100,10 @@ function Header1() {
               <NavDropdown.Item href="/service/design">
                 Design
               </NavDropdown.Item>
-              <NavDropdown.Divider />
+              {/* <NavDropdown.Divider />
               <NavDropdown.Item href="/service/videos">
                 Videos
-              </NavDropdown.Item>
+              </NavDropdown.Item> */}
             </NavDropdown>
             <li className="divider-center">
               <hr class="m-divider" />

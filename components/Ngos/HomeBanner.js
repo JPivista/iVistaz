@@ -11,13 +11,17 @@ function HeroBanner() {
     url: '/industrie/ngos_banner.jpg'
   };
 
+  const mobileBackgroundImage = {
+    url: '/industrie/mobile_industries_banner/NGOs_mob_banner.jpg'
+  }
+
   const bannerHeading = 'NOT-FOR-PROFITS/ NGOS'
 
   return (
     <>
       <Container className="w-80" >
         <Row className="d-flex align-items-center">
-          <BannerAllPage backgroundImage={backgroundImage} bannerHeading={bannerHeading} />
+          <BannerAllPage backgroundImage={backgroundImage} bannerHeading={bannerHeading} mobileBackgroundImage={mobileBackgroundImage} />
         </Row>
       </Container>
 
