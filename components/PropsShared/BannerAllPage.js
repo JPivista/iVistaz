@@ -29,7 +29,6 @@ const BannerAllPage = ({ backgroundImage, bannerHeading, mobileBackgroundImage }
 
 
     return (
-
         <>
             <div
                 className='d-flex flex-column justify-content-lg-center justify-content-start align-items-center align-items-lg-start pt-lg-0 pt-4 rounded-5'

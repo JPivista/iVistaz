@@ -9,6 +9,10 @@ const HomeBanner = () => {
         url: '/services/web_design_and_development_banner.jpg'
     };
 
+    const mobileBackgroundImage = {
+        url: '/services/mobile_service_banner/design_banner.jpg'
+    }
+
     // Banner Main and Sub Heading
     const bannerSubHeading = 'WEB DESIGN &'
     const bannerHeading = 'DEVELOPMENT'
@@ -18,7 +22,7 @@ const HomeBanner = () => {
         <>
             <Container className="w-80" >
                 <Row className="d-flex align-items-center">
-                    <ServiceBanner backgroundImage={backgroundImage} bannerSubHeading={bannerSubHeading} bannerHeading={bannerHeading} />
+                    <ServiceBanner backgroundImage={backgroundImage} bannerSubHeading={bannerSubHeading} bannerHeading={bannerHeading} mobileBackgroundImage={mobileBackgroundImage} />
                 </Row>
             </Container>
 
