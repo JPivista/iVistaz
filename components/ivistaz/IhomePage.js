@@ -7,14 +7,10 @@ import CountUp from 'react-countup';
 import MasteryArtsPerfomancePage from './MasteryArtsPerfomancePage'
 
 function IhomePage() {
-
-
   const [isYearOfPerformance, setIsYearOfPerformance] = useState(1998);
   const [perfomance, setPerformance] = useState(0);
   const [isMainSectionVisible, setIsMainSectionVisible] = useState(true);
   const [isNextSectionVisible, setIsNextSectionVisible] = useState(false);
-
-  // const nextSectionRef = useRef();
 
   function handleScrollToResults() {
     setIsMainSectionVisible(false); // Hide the main section
@@ -27,16 +23,6 @@ function IhomePage() {
     const performance = year - isYearOfPerformance;
     setPerformance(performance);
   }, [isYearOfPerformance]);
-
-
-  // function handleScroll() {
-  //   window.scroll({
-  //     top: document.body.offsetHeight,
-  //     left: 0,
-  //     behavior: 'smooth',
-  //   });
-
-  // }
 
   return (
     <>

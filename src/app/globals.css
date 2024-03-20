@@ -386,7 +386,7 @@ background: rgba(255, 255, 255, 0) !important;
   background: #fff !important;
   color: red !important;
   border: 0px !important;
-  width: 250px !important;
+  width: 254px !important;
   padding: 16px !important;
 }
 
@@ -1321,7 +1321,6 @@ cursor: pointer;
     font-size: 25px !important;
 
   }
-
   /* Header NavBar */
   .offcanvas.offcanvas-end {
     width: 100% !important;
@@ -1333,8 +1332,22 @@ cursor: pointer;
   a.dropdown-item {
     font-size: 18px;
   }
+
   ul.navbar-nav.text-center.flex-grow-1.pe-3 {
     padding: 0px !important;
     margin: 0px !important;
   }
+
+  .master-img{
+    width: 100%;
+      margin-top: 0px;
+      overflow: hidden;
+  }
+
+  img.master-img {
+    height: auto;
+  }
+  .w-80{
+    width:100% !important;  
+    }
 }

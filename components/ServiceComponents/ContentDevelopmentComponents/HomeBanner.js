@@ -9,13 +9,17 @@ const HomeBanner = () => {
         url: '/services/content_development.jpg'
     };
 
+    const mobileBackgroundImage = {
+        url: '/service/mobile_service_banner/content_development_banner.jpg'
+    }
+
     const bannerSubHeading = "Content Development"
     const bannerHeading = "B2B & B2C"
     return (
         <>
             <Container className="w-80" >
                 <Row className="d-flex align-items-center">
-                    <ServiceBanner backgroundImage={backgroundImage} bannerSubHeading={bannerSubHeading} bannerHeading={bannerHeading} />
+                    <ServiceBanner backgroundImage={backgroundImage} mobileBackgroundImage={mobileBackgroundImage} bannerSubHeading={bannerSubHeading} bannerHeading={bannerHeading} />
                 </Row>
             </Container>
         </>
