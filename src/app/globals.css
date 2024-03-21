@@ -1350,4 +1350,9 @@ cursor: pointer;
   .w-80{
     width:100% !important;  
     }
+    .arts-img{
+      width: 100%;
+      margin-top: 0px !important;
+      overflow: hidden;
+    }
 }

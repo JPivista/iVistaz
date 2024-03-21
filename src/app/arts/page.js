@@ -4,6 +4,7 @@ import Header1 from '../../../components/HeaderBlack'
 import { Col, Container, Row, Image } from 'react-bootstrap'
 import CountUp from 'react-countup';
 import Link from 'next/link';
+import Footer from '../../../components/Footer';
 // import Image from 'next/image'
 function page() {
   return (
@@ -29,19 +30,20 @@ function page() {
         </Container>
 
         <Container className="w-80">
-          <Row>
-            <Col className="d-flex justify-content-end flex-column">
+          <Row className='d-flex flex-lg-row flex-column-reverse'>
+            <Col className="d-flex justify-content-end flex-column py-4 py-lg-3">
               <Container className=" margin-left d-flex flex-lg-row flex-column">
                 <Link href="/mastery" className="arts-text">MASTERY</Link>
                 <Link href="/performance" className="arts-text mx-lg-5">PERFORMANCE</Link>
               </Container>
             </Col>
-            <Col className="d-none d-lg-flex">
+            <Col className="">
               <Image src="/images/arts.svg" className="arts-img" alt='' />
             </Col>
           </Row>
         </Container>
       </Container>
+      <Footer />
     </>
   )
 }

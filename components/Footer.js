@@ -9,7 +9,7 @@ function Footer() {
     return (
         <>
             <Container fluid className="iv-bg">
-                <Container className="w-80 p-12" >
+                <Container className="w-80 p-12 d-lg-block d-none" >
                     <Row>
                         <Col className="f-head" lg={4}>SERVICES</Col>
                         <Col className="f-head" lg={2}>SOLUTIONS</Col>
@@ -17,11 +17,17 @@ function Footer() {
                         <Col className="f-head" lg={3}>ABOUT IVISTAZ</Col>
                     </Row>
                 </Container>
+
+                <Row className='w-80 p-4 d-lg-none d-flex'>
+
+                </Row>
+
             </Container>
             <Container fluid className="bg-black">
                 <Container className="w-80 p-12" >
                     <Row>
                         <Col className="footer" lg={4}>
+                            <Col className="f-head d-lg-none d-flex py-lg-0 py-3 pb-2" lg={4}>SERVICES</Col>
                             <ul>
                                 <li>Web design & development</li>
                                 <li>Search Engine Optimization</li>
@@ -34,6 +40,7 @@ function Footer() {
                             </ul>
                         </Col>
                         <Col className="footer" lg={2}>
+                            <Col className="f-head d-lg-none d-flex py-lg-0 py-3 pb-2" lg={2}>SOLUTIONS</Col>
                             <ul>
                                 <li>Value Creation</li>
                                 <li>Traffic Lead-gen</li>
@@ -42,6 +49,7 @@ function Footer() {
                             </ul>
                         </Col>
                         <Col className="footer" lg={3}>
+                            <Col className="f-head d-lg-none d-flex py-lg-0 py-3 pb-2" lg={3}>INDUSTRIES</Col>
                             <ul>
                                 <li>Tech</li>
                                 <li>Hospitality</li>
@@ -55,6 +63,7 @@ function Footer() {
                             </ul>
                         </Col>
                         <Col className="footer" lg={3}>
+                            <Col className="f-head d-lg-none d-flex py-lg-0 py-3 pb-2" lg={3}>ABOUT IVISTAZ</Col>
                             <ul>
                                 <li>Performance Focus</li>
                                 <li>Company</li>

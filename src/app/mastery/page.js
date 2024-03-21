@@ -6,13 +6,12 @@ import CountUp from 'react-countup';
 import Link from 'next/link';
 import Image from 'next/image';
 import gsap from 'gsap';
+import Footer from '../../../components/Footer';
 
 
 function page() {
-
   return (
     <>
-
       <Container fluid className="bg-black" style={{ minHeight: '100vh' }}>
         <Header1 />
         <Container className="w-80">
@@ -37,27 +36,27 @@ function page() {
           </Row>
         </Container>
 
-        <Container className="w-80">
+        <Container className="w-80 mt-lg-0 mt-5">
           <div id="wrapper">
             <section id="content">
             </section>
           </div>
           <Row className='d-flex flex-lg-row flex-column-reverse'>
             <Col className="overflow">
-              <Image src="/images/mastery.svg" className="master-img" width={600} height={700} alt='' />
+              <Image src="/images/mastery_image.svg" className="h-100 img-fluid" width={600} height={700} alt='' />
             </Col>
             <Col className="">
               <p className="mastery-text">“Mastery demands all of a person.” – Albert Einstein</p>
               <p className="mastery-text">Years of being in the digital marketing landscape and working with over 300+ clients has given us insights on how to master every aspect of this dynamic industry. Want to know how we do it?</p>
               <Container className="mt-3 pb-5 margin-left d-flex flex-column justify-content-center">
-                <Row className='d-flex flex-lg-row flex-column gap-3 justify-content-center'>
-                  <Col className='text-center'>
+                <div className='d-flex flex-lg-row flex-column gap-3 justify-content-start'>
+                  <div className='text-start'>
                     <Link href="/mastery/about-us" className="btn btn-13 b-width">About Us</Link>
-                  </Col>
-                  <Col className='text-center'>
-                    <Link href="/mastery/solutions" className="btn btn-15">Solutions</Link>
-                  </Col>
-                </Row>
+                  </div>
+                  <div className='text-start'>
+                    <Link href="/mastery/solutions" className="btn btn-13 b-width">Solutions</Link>
+                  </div>
+                </div>
               </Container>
               <Container className="mt-5 margin-left d-lg-flex d-none">
                 <Link href="/arts" className="text">ART</Link>
@@ -66,12 +65,14 @@ function page() {
             </Col>
           </Row>
 
-          <Container className="mt-5 margin-left d-flex d-lg-none">
+          <Container className="mt-5 margin-left d-flex d-lg-none pb-4 pb-lg-0">
             <Link href="/arts" className="text">ART</Link>
             <Link href="/performance" className="text mx-lg-5 mx-4">PERFORMANCE</Link>
           </Container>
         </Container>
       </Container>
+
+      <Footer />
     </>
   )
 }

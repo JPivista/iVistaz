@@ -17,10 +17,10 @@ function Header1() {
   const handleShow = () => setShow(true);
 
   return (
-    <Container className="mb-5" fluid>
+    <Container className="mb-5 p-0" fluid>
       <Container>
         <nav class="navbar bg-color z-index-100">
-          <div class="container-fluid">
+          <div class="container-fluid p-0">
             <Link class="navbar-brand" href="/">
               <Image src="/images/ivista_logo.svg" width={200} height={40} className="img-fluid" alt='' />
             </Link>
