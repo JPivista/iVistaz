@@ -26,7 +26,7 @@ function performance() {
                       <Link href="/industries" className="btn btn-13 b-width">Industries</Link>
                     </div>
                     <div className='text-lg-start text-center'>
-                      <Link href="/case-studies" className="btn btn-14 mx-5">Case Studies</Link>
+                      <Link href="/case-studies" className="btn btn-14 mx-lg-5">Case Studies</Link>
                     </div>
                   </div>
                 </Container>
