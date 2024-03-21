@@ -15,7 +15,7 @@ function performance() {
         </Container>
 
         <Container className="w-80 mt-5">
-          <Row>
+          <Row className='d-flex flex-lg-row flex-column'>
             <Col className="d-flex flex-column justify-content-between">
               <Container className='text-lg-start text-center'>
                 <p className="mastery-text">“Behind every brilliant performance there were countless hours of practice and preparation.” – Eric Butterworth</p>
