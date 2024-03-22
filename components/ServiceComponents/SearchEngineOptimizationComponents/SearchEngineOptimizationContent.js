@@ -37,9 +37,9 @@ const SearchEngineOptimizationContent = () => {
                         iVistaz will provide weekly, monthly and quarterly reports to help you track progress on keyword ranking and impact on your web traffic and user engagement with your most important pages.
                     </p>
 
-                    <p className="text-black para-text">
+                    <h1 className='fs-3 text-red fw-bold'>
                         Contact us today to embark on your journey to digital success.
-                    </p>
+                    </h1>
                 </Col>
 
             </Container>

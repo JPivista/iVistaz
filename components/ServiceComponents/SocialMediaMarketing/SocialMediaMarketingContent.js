@@ -24,13 +24,13 @@ const SocialMediaMarketingContent = () => {
                         We understand the critical role that social media plays in helping you reach your goals, and we&apos;re here to guide your brand towards success in this dynamic arena. For businesses in both the B2B and B2C sectors, we will harness the intricacies of audience segmentation to ensure that your ad is seen by the right people through the right social media platforms like LinkedIn, Facebook, Instagram, and Twitter.
                     </p>
 
-                    <p className="text-black para-text fst-italic">
+                    <h1 className='fs-3 text-red fw-bold'>
                         Leads, online sales, enquiries, room bookings—what goals do you want to achieve with social media marketing?
-                    </p>
+                    </h1>
 
-                    <p className="text-black para-text fst-italic">
+                    <h1 className='fs-3 text-red fw-bold'>
                         Write to us at:
-                    </p>
+                    </h1>
 
                 </Col>
 

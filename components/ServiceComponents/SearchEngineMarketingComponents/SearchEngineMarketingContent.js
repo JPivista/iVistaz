@@ -36,13 +36,13 @@ const SearchEngineMarketingContent = () => {
                         Depending on your needs, we will recommend search ads, display ads, video ads, shopping ads, and discovery ads to drive traffic to your web conversion pages. While helping you with online leads, sales, or bookings, our focus will also be to optimize your Cost Per Lead (CPL).
                     </p>
 
-                    <p className="text-black para-text">
+                    <h1 className='fs-3 text-red fw-bold'>
                         Need help with your Search Engine Marketing?
-                    </p>
+                    </h1>
 
-                    <p className="text-black para-text">
+                    <h1 className='fs-3 text-red fw-bold'>
                         Let us know your requirements.
-                    </p>
+                    </h1>
                 </Col>
             </Container>
         </>

@@ -17,8 +17,17 @@ function Header1() {
   const handleShow = () => setShow(true);
 
   return (
+
     <Container className="mb-5 p-0" fluid>
-      <Container>
+
+      {
+        `
+        .dropdown-menu.show {
+          border: 0pc;
+      }
+        `
+      }
+      <Container className='w-80'>
         <nav class="navbar bg-color z-index-100">
           <div class="container-fluid p-0">
             <Link class="navbar-brand" href="/">
@@ -72,31 +81,31 @@ function Header1() {
             {/* <li class="nav-item">
               <Link class="nav-link active" aria-current="page" href="/arts/services">Services</Link>
             </li> */}
-            <NavDropdown title="Services" id="navbarScrollingDropdown">
+            <NavDropdown title="Services" id="navbarScrollingDropdown" className='border-0'>
               <NavDropdown.Item href="/service/website-design-and-development">
                 Web Design & Development
               </NavDropdown.Item>
-              <NavDropdown.Divider />
+              {/* <NavDropdown.Divider /> */}
               <NavDropdown.Item href="/service/search-engine-optimization">
                 Search Engine Optimization
               </NavDropdown.Item>
-              <NavDropdown.Divider />
+              {/* <NavDropdown.Divider /> */}
               <NavDropdown.Item href="/service/search-engine-marketing">
                 Search Engine Marketing
               </NavDropdown.Item>
-              <NavDropdown.Divider />
+              {/* <NavDropdown.Divider /> */}
               <NavDropdown.Item href="/service/social-media-organic">
                 Social Media - Organic
               </NavDropdown.Item>
-              <NavDropdown.Divider />
+              {/* <NavDropdown.Divider /> */}
               <NavDropdown.Item href="/service/social-media-marketing">
                 Social Media Marketing
               </NavDropdown.Item>
-              <NavDropdown.Divider />
+              {/* <NavDropdown.Divider /> */}
               <NavDropdown.Item href="/service/content-development-b2b-b2c">
                 Content Development (B2B & B2C)
               </NavDropdown.Item>
-              <NavDropdown.Divider />
+              {/* <NavDropdown.Divider /> */}
               <NavDropdown.Item href="/service/design">
                 Design
               </NavDropdown.Item>
@@ -116,21 +125,21 @@ function Header1() {
             </li>
             <NavDropdown title="Industries" id="navbarScrollingDropdown">
               <NavDropdown.Item href="/industries/appliances">Appliances</NavDropdown.Item>
-              <NavDropdown.Divider />
+              {/* <NavDropdown.Divider /> */}
               <NavDropdown.Item href="/industries/automobiles">Automobiles</NavDropdown.Item>
-              <NavDropdown.Divider />
+              {/* <NavDropdown.Divider /> */}
               <NavDropdown.Item href="/industries/beauty">Beauty & Wellness</NavDropdown.Item>
-              <NavDropdown.Divider />
+              {/* <NavDropdown.Divider /> */}
               <NavDropdown.Item href="/industries/fashion">Fashion & Accessories</NavDropdown.Item>
-              <NavDropdown.Divider />
+              {/* <NavDropdown.Divider /> */}
               <NavDropdown.Item href="/industries/hospitality">Hospitality</NavDropdown.Item>
-              <NavDropdown.Divider />
+              {/* <NavDropdown.Divider /> */}
               <NavDropdown.Item href="/industries/jewellery">Jewellery</NavDropdown.Item>
-              <NavDropdown.Divider />
+              {/* <NavDropdown.Divider /> */}
               <NavDropdown.Item href="/industries/ngo">Not-for-Profits/NGOs</NavDropdown.Item>
-              <NavDropdown.Divider />
+              {/* <NavDropdown.Divider /> */}
               <NavDropdown.Item href="/industries/tech">Tech/IT</NavDropdown.Item>
-              <NavDropdown.Divider />
+              {/* <NavDropdown.Divider /> */}
 
               {/* <NavDropdown.Item href="#action4">
                 Another action

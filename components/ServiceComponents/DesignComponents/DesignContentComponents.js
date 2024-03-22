@@ -51,12 +51,12 @@ const DesignContentComponents = () => {
                     <p className="text-black para-text">
                         Our collateral design services include the creation of various marketing materials, like brochures, white papers, and other promotional materials.
                     </p>
-                    <p className="text-black para-text">
+                    <h1 className='fs-3 text-red fw-bold'>
                         What is your design requirement today?
-                    </p>
-                    <p className="text-black para-text">
+                    </h1>
+                    <h1 className='fs-3 text-red fw-bold'>
                         Write to us at:
-                    </p>
+                    </h1>
 
                 </Col>
             </Container>

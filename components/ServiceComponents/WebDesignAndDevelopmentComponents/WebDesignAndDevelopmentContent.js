@@ -28,9 +28,9 @@ const WebDesignAndDevelopmentContent = () => {
                         Whether you need a B2B website, an e-commerce platform, a compelling website for your NGO, or a mobile app, we tailor our designs to align with your digital marketing objectives while optimizing user experience.
                     </p>
 
-                    <p className="text-black para-text">
+                    <h1 className='fs-3 text-red fw-bold'>
                         Our expertise in web and mobile app design includes:
-                    </p>
+                    </h1>
 
                     <Col>
                         <p className="text-black para-text mb-0">
@@ -50,9 +50,9 @@ const WebDesignAndDevelopmentContent = () => {
                         </p>
                     </Col>
 
-                    <p className="text-black para-text">
+                    <h1 className='fs-3 text-red fw-bold'>
                         Technological Proficiency:
-                    </p>
+                    </h1>
 
                     <Col>
                         <p className="text-black para-text mb-0">

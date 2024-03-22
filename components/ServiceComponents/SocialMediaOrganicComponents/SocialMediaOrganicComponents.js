@@ -24,9 +24,9 @@ const SocialMediaOrganicComponents = () => {
                     Our approach to organic social media strategy will be directly linked to measurable metrics such as engagement and follower growth. This will provide you with invaluable insights into the effectiveness of your social media marketing endeavors. With a focus on these key performance indicators, you&apos;ll gain a comprehensive understanding of how your brand resonates with your audience and the impact of your online presence.
                 </p>
 
-                <p className="text-black para-text">
+                <h1 className='fs-3 text-red fw-bold'>
                     How can we help you with your organic social media?
-                </p>
+                </h1>
 
             </Col>
 

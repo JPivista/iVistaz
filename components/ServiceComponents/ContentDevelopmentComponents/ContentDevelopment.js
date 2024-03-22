@@ -23,35 +23,35 @@ const ContentDevelopment = () => {
                         Our approach extends beyond mere content creation; we strategically plan the content mix to cater to every stage of the buyer journey—top-of-the-funnel, middle-of-the-funnel, and bottom-of-the-funnel. We will craft content that will resonate with your audience at each touchpoint, bolster user engagement, foster repeat visitors, and drive traffic towards your conversion pages.
                     </p>
 
-                    <p className="text-black para-text">
-                        Our content development expertise covers the following:
-                    </p>
-
                     <h1 className='fs-3 text-red fw-bold'>
-                        Long-form content:
+                        Our content development expertise covers the following:
                     </h1>
+
+                    <p className='text-red fw-bold para-text'>
+                        Long-form content:
+                    </p>
 
                     <p className="text-black para-text">
                         Blogs. Articles. White papers. eBooks. POVs. Case studies. Product-solution pages. Campaign landing pages. Newsletter content. Video content.
                     </p>
 
-                    <h1 className='fs-3 text-red fw-bold'>
+                    <p className='text-red fw-bold para-text'>
                         Short content:
-                    </h1>
+                    </p>
 
                     <p className="text-black para-text">
                         A+ content. e-commerce content and product descriptions. Quora content. Social media content, including short videos. Infographic development. Content for email marketing. Content for paid marketing for search and social.
                     </p>
 
-                    <h1 className='fs-3 text-red fw-bold'>
+                    <p className='text-red fw-bold para-text'>
                         Industries:
-                    </h1>
+                    </p>
 
                     <p className="text-black para-text">
                         We have helped businesses across a diverse range of industries, such as hi-tech, hospitality, not-for-profits, healthcare, real estate, aviation, home and kitchen appliances, and retail sectors, with their unique content needs.
                     </p>
 
-                    <p className="text-black para-text">
+                    <p className='text-red fw-bold para-text'>
                         What is your content requirement today?
                         Write to us at:
                     </p>
