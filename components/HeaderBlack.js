@@ -20,13 +20,15 @@ function Header1() {
 
     <Container className="mb-5 p-0" fluid>
 
-      {
-        `
+      <style>
+        {
+          `
         .dropdown-menu.show {
-          border: 0pc;
+          border: 0pc !important;
       }
         `
-      }
+        }
+      </style>
       <Container className='w-80'>
         <nav class="navbar bg-color z-index-100">
           <div class="container-fluid p-0">
