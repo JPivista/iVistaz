@@ -7,7 +7,7 @@ const page = () => {
     return (
 
         <>
-            <Container fluid className="bg-white pb-5">
+            <Container fluid className="bg-white p-0">
                 <SocialMediaMarketingComponents />
             </Container>
         </>

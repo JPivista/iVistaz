@@ -1348,11 +1348,27 @@ cursor: pointer;
     height: auto;
   }
   .w-80{
-    width:100% !important;  
+    width:100% !important;   
     }
     .arts-img{
       width: 100%;
       margin-top: 0px !important;
       overflow: hidden;
     }
+}
+
+/* maximum line show */
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+          line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+
+/* wordpress class */
+.wclr-red {
+  color: '#ED2023'
 }

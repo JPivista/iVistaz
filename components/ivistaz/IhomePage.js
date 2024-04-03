@@ -7,7 +7,7 @@ import CountUp from 'react-countup';
 import MasteryArtsPerfomancePage from './MasteryArtsPerfomancePage'
 
 function IhomePage() {
-  const [isYearOfPerformance, setIsYearOfPerformance] = useState(1998);
+  const [isYearOfPerformance, setIsYearOfPerformance] = useState(1996);
   const [perfomance, setPerformance] = useState(0);
   const [isMainSectionVisible, setIsMainSectionVisible] = useState(true);
   const [isNextSectionVisible, setIsNextSectionVisible] = useState(false);

@@ -8,7 +8,7 @@ function Footer() {
     const currentYear = new Date().getFullYear();
     return (
         <>
-            <Container fluid className="iv-bg">
+            <Container fluid className="iv-bg p-0">
                 <Container className="w-80 p-12 d-lg-block d-none" >
                     <Row>
                         <Col className="f-head" lg={4}>SERVICES</Col>
