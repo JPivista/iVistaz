@@ -25,7 +25,10 @@ function Header1() {
           `
         .dropdown-menu.show {
           border: 0pc !important;
-      }
+          position: absolute;
+          inset: auto auto 0px 0px; */
+          transform: translate3d(0px, 0px, 0px
+        }
         `
         }
       </style>
@@ -169,7 +172,7 @@ function Header1() {
               <hr class="m-divider" />
             </li>
 
-            <NavDropdown title="About" id="navbarScrollingDropdown">
+            <NavDropdown title="Company" id="navbarScrollingDropdown">
               <style>
                 {/* {`
                 .dropdown-menu.show{
@@ -178,9 +181,9 @@ function Header1() {
               `} */}
               </style>
               <NavDropdown.Item href="/team">Team</NavDropdown.Item>
-              <NavDropdown.Divider />
-              {/* <NavDropdown.Item href="/industries/tech">About</NavDropdown.Item>
-              <NavDropdown.Divider /> */}
+              {/* <NavDropdown.Divider /> */}
+              <NavDropdown.Item href="/mastery/about-us">About Us</NavDropdown.Item>
+              {/* <NavDropdown.Divider /> */}
               <NavDropdown.Item href="/careers">Careers</NavDropdown.Item>
             </NavDropdown>
             {/* <li className="divider-center">

@@ -6,11 +6,13 @@ import Header1 from '../../../../components/HeaderBlack';
 
 function page() {
   return (
-<Container fluid className="bg-black pb-5">
-<Header1/>
-<h1 className="text-offwhite fs-70 fw-bold text-center">MASTERY</h1> 
-<Aboutus />
-</Container>
+    <Container fluid className="bg-black pb-5">
+      <Header1 />
+      <Container className='w-80'>
+        <h1 className="text-offwhite fs-70 fw-bold text-start">MASTERY</h1>
+      </Container>
+      <Aboutus />
+    </Container>
   )
 }
 

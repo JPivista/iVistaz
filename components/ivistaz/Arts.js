@@ -9,7 +9,7 @@ function Arts() {
         <>
             <Container className="bg-black mb-5" fluid>
                 <Container className="w-80 pt-4 pb-5">
-                    <h1 className="fs-80 fw-bold text-white">Arts</h1>
+                    <h1 className="fs-80 fw-bold text-white">Art</h1>
                 </Container>
                 <Container className="w-80">
                     <p className="fs-20 fw-bold text-white-50 hover-paragraph" >

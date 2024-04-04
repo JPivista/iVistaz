@@ -12,7 +12,7 @@ import Footer from '../../../components/Footer';
 function page() {
   return (
     <>
-      <Container fluid className="bg-black" style={{ minHeight: '100vh' }}>
+      <Container fluid className="bg-black d-flex flex-column justify-content-between" style={{ minHeight: '100vh' }}>
         <Header1 />
         <Container className="w-80">
           <h1 className="text-white fs-70 fw-bold">MASTERY</h1>

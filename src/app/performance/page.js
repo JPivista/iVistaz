@@ -7,6 +7,7 @@ import Link from 'next/link';
 import Image from 'next/image'
 import Footer from '../../../components/Footer';
 function performance() {
+
   return (
     <>
       <Container fluid className="iv-bg min-vh-100 border-bottom">
@@ -35,7 +36,7 @@ function performance() {
 
               <Container className="margin-left d-lg-flex d-none mb-4">
                 <Col className=''>
-                  <Link href="/arts" className="perform-text">ARTS</Link>
+                  <Link href="/arts" className="perform-text">ART</Link>
                   <Link href="/mastery" className="perform-text mx-5">MASTERY</Link>
                 </Col>
               </Container>
@@ -48,7 +49,7 @@ function performance() {
 
           <Container className="margin-left d-lg-none d-flex mb-4">
             <Col className=''>
-              <Link href="/arts" className="perform-text">ARTS</Link>
+              <Link href="/arts" className="perform-text">ART</Link>
               <Link href="/mastery" className="perform-text mx-5">MASTERY</Link>
             </Col>
           </Container>

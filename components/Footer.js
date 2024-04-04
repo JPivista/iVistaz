@@ -98,7 +98,7 @@ function Footer() {
             </Container>
             <Container className="bg-black pt-1 pb-1" fluid>
                 <Container className="text-center copyright">
-                    <p>© {currentYear} i-Vista Web Solutions Pvt. Ltd.</p>
+                    <p className='mb-0'>© {currentYear} iVistaz Ecom Services Pvt Ltd</p>
                 </Container>
             </Container>
         </>
