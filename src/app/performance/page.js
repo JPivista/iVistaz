@@ -7,16 +7,13 @@ import Link from 'next/link';
 import Image from 'next/image'
 import Footer from '../../../components/Footer';
 function performance() {
-
   return (
     <>
-      <Container fluid className="iv-bg min-vh-100 border-bottom">
+      <Container fluid className="iv-bg min-vh-100 border-bottom d-flex flex-column justify-content-between">
         <Header1 />
         <Container className="w-80 mb-5">
           <h1 className="text-white fs-70 fw-bold mb-5 text-start">PERFORMANCE</h1>
-        </Container>
 
-        <Container className="w-80 mt-5">
           <Row className='d-flex flex-lg-row flex-column'>
             <Col className="d-flex flex-column justify-content-between p-0">
               <Container className='text-start'>

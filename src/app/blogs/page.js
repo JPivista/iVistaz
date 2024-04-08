@@ -5,9 +5,6 @@ import BlogComponents from '../../../components/BlogsComponentes/'
 
 function page() {
 
-
-
-
   return (
     <>
       <BlogComponents />

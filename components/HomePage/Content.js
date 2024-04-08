@@ -50,22 +50,24 @@ const HomePage = () => {
               :
               (
                 <Col className="d-flex flex-column justify-content-center align-items-center">
-                  <Image src="/images/ivista_logo.svg" width={300} height={80} className="img-fluid" alt="" /></Col>
+                  <Image src="/images/ivista_logo.svg" width={300} height={80} className="img-fluid" alt="" />
+                </Col>
               )
           }
           {
             menu ? (
               <>
-                <Col className="d-flex flex-column justify-content-center align-items-center q">
+                <Col className="d-flex flex-column justify-content-center align-items-center">
                   <h2 className="text-white fs-60 fw-bold">WHAT DOES</h2>
                   <div class=" text-white fs-70 fw-bold">
                     PERFORMANCE
                   </div>
                   <h2 className="text-white fs-60 fw-bold"> MEAN TO YOU?</h2>
                 </Col>
+
                 <Col ref={myDivRef} className="d-flex flex-column justify-content-center align-items-center pt-5">
-                  <Row className="d-flex flex-lg-row flex-column align-items-center justofy-content-end g-3">
-                    <Col className="overflow-hidden blurb-ripple-out-wrap ">
+                  <Row className="d-flex flex-lg-row flex-column align-items-center justofy-content-end g-3 custom-home-row">
+                    <Col className="overflow-hidden blurb-ripple-out-wrap w-100 bg-danger">
                       <Link href="/sales" className="btn h-btn blurb-ripple-out d-flex flex-row gap-2 justify-content-center">
                         <Image src="/mainpage/online_sale.svg" alt="" width={30} height={30} />
                         <span>Online Sales</span>
@@ -85,7 +87,7 @@ const HomePage = () => {
                     </Col>
                   </Row>
 
-                  <Row className="d-flex flex-lg-row flex-column align-items-center g-3 pt-3">
+                  <Row className="d-flex flex-lg-row flex-column align-items-center g-3 pt-3 custom-home-row">
                     <Col className="overflow-hidden blurb-ripple-out-wrap" >
                       <Link href="/traffic" className="btn h1-btn blurb-ripple-out d-flex flex-row gap-2 justify-content-center">
                         <Image src="/mainpage/keyword.svg" alt="" width={30} height={30} />
@@ -109,7 +111,11 @@ const HomePage = () => {
                   <span>O</span><span>R</span><span>M</span><span>A</span><span>N</span><span>C</span><span>E</span>
                 </div>
                 <h2 className="text-white fs-60 fw-bold"> MEAN TO YOU?</h2>
-                <div className='icon-scroll' onClick={handleScroll}></div>
+
+                <div className='icon-scroll mb-1' onClick={handleScroll}>
+                </div>
+                <div class="scroll-down"></div>
+
               </Col>
             )
           }

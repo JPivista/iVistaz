@@ -1,3 +1,4 @@
+'use client'
 import React, { useEffect, useState } from 'react'
 import { Col, Row, Container, Image } from 'react-bootstrap'
 import Header1 from '../HeaderBlack';
@@ -6,24 +7,26 @@ import { FaArrowRight } from 'react-icons/fa';
 import ConfigData from '../../config'
 
 const BlogsPageComponets = () => {
-    const siteUrl = ConfigData.wpApiUrl;
 
-    const [data, dataSet] = useState();
-    // console.log("siteUrl:", siteUrl);
+    const siteUrl = ConfigData.wpApiUrl;
+    const serverUrl = ConfigData.SERVER;
+    const [data, setData] = useState(null); // Initialize data state with null initially
 
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch(`${siteUrl}/blogs`);
+                const response = await fetch(`${siteUrl}/blogs?_embed&production_mode[]=${serverUrl}`);
                 const data = await response.json();
-                dataSet(data);
-                // console.log(data);
-            } catch (e) {
-                console.error(e);
+                setData(data);
+                console.log(data);
+            } catch (error) {
+                console.error('Error fetching data:', error);
             }
         };
+
         fetchData();
-    }, []);
+    }, [siteUrl, serverUrl]); // Include dependencies in useEffect dependency array
+
     return (
         <>
             <Container className="bg-black pb-5" fluid>
@@ -35,37 +38,30 @@ const BlogsPageComponets = () => {
                 </Container>
 
                 <Container className="w-80">
-                    <Row>
-                        <Col>
-                            <div class="iv-cards">
-                                <Image src="/images/1.jpg" class="card-img-top w-100 h-100 img-r" alt="..." width={200} height={200} />
-                                <div class="card-body">
-                                    <h5 class="card-title">DIGITAL MARKETING ROUNDUP JANUARY 2022</h5>
-                                    <p class="card-text">In the January version of Digital Marketing Roundup, we provide the latest news and updates from the Digital marketing indust…</p>
-                                    <a href="#" class="iv-link">Read more <FaArrowRight className="icons" size="25" /></a>
+
+                    <Row className='d-flex flex-lg-row flex-column bg-black'>
+                        {data ? ( // Check if data is available
+                            data.map((post) => (
+                                <div class="iv-cards col-lg-4 d-flex flex-column p-3" key={post.id}>
+                                    <Image
+                                        src={post.acf.desktop_banner_image.url}
+                                        alt={post.title.rendered}
+                                        className='w-100' height={220}
+                                    />
+                                    <div class="card-body text-white d-flex flex-column justify-content-between">
+
+                                        <h5 class="card-title">
+                                            {post.title.rendered}
+                                        </h5>
+
+                                        <p class="card-text three-line-show" dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
+                                        <a href="#" class="iv-link">Read more <FaArrowRight className="icons" size="25" /></a>
+                                    </div>
                                 </div>
-                            </div>
-                        </Col>
-                        <Col>
-                            <div class="iv-cards">
-                                <Image src="/images/2.jpg" class="card-img-top w-100 h-100 img-r" alt="..." width={200} height={200} />
-                                <div class="card-body">
-                                    <h5 class="card-title">DIGITAL MARKETING ROUNDUP DECEMBER 2021</h5>
-                                    <p class="card-text">In the December version of Digital Marketing Roundup, we provide the latest news and updates from the Digital marketing indus…</p>
-                                    <a href="#" class="iv-link">Read more <FaArrowRight className="icons" size="25" /></a>
-                                </div>
-                            </div>
-                        </Col>
-                        <Col>
-                            <div class="iv-cards">
-                                <Image src="/images/3.jpg" class="card-img-top w-100 h-100 img-r" alt="..." width={200} height={200} />
-                                <div class="card-body">
-                                    <h5 class="card-title">CROWDS VERSUS COMMUNITIES: A QUICK GUIDE FOR THE PERPLEXED</h5>
-                                    <p class="card-text">The wisdom of the crowd is one of the tenets of Web 2.0. It’s the belief that the aggregated opinions of a large group of people will be as g…</p>
-                                    <a href="#" class="iv-link">Read more <FaArrowRight className="icons" size="25" /></a>
-                                </div>
-                            </div>
-                        </Col>
+                            ))
+                        ) : (
+                            <div className='text-white'>Loading...</div> // Render loading message while data is being fetched
+                        )}
                     </Row>
                 </Container>
             </Container>
