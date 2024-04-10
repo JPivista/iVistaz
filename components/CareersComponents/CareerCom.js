@@ -46,18 +46,69 @@ const CareerCom = () => {
         <>
             <style>
                 {`
-            input[type="file"] {
-                color: white;
-            }
+                input[type="file"] {
+                    color: white;
+                }
             `}
             </style>
             <Container className="w-80">
-                <Row>
-                    <Col lg={8}>
+                <Row className='d-flex flex-column'>
+                    <Col className='mb-4'>
                         <h1 className="fs-21 text-white fw-bold">CAREERS</h1>
                         <p className="text-white para-text">
                             Discover the exceptional career opportunities at iVista. Join our dynamic team and collaborate with talented professionals and esteemed clients. Engage in innovative projects that make a significant impact, while embracing a professional work culture characterized by positivity and dedication. Unleash your full potential and together, let&apos;s redefine the possibilities in the digital marketing industry.
                         </p>
+                    </Col>
+
+                    <Col>
+                        <h2 className="fs-21 text-white fw-bold">CURRENT OPENING</h2>
+                        <p className="text-white para-text">
+                            Designer Position
+                        </p>
+                        <p className="text-red para-text fw-bolder">
+                            We’re Looking for a Designer
+                        </p>
+
+                        <Row>
+                            <Col lg={9}>
+                                <p className="text-white para-text">
+                                    If you have a sharp eye for design and can transform concepts into visual stories, we want you. As our designer, you’ll work on a variety of projects, bringing creativity and consistency to the brand’s visual identity. Proficiency in design software and a portfolio showcasing your digital and print media skills are essential. Collaboration is key, as you’ll be part of a team that values innovation and aesthetics.
+                                </p>
+                            </Col>
+
+                            <Col className='d-flex flex-column justify-content-center align-items-center'>
+                                <button type="button" class="btn btn-15">Apply</button>
+                            </Col>
+                        </Row>
+                        <p className="text-red para-text fw-bolder">
+                            Do you have it in you?Do you have it in you?                        </p>
+                    </Col>
+
+                    <Col className='mb-4 iv-bg rounded-4 p-4'>
+
+                        <p className="text-white para-text fw-bolder">
+                            SEO Specialist Position
+                        </p>
+                        <p className="text-white para-text fw-bolder">
+                            Seeking an SEO Specialist
+                        </p>
+                        <Row>
+                            <Col lg={9}>
+                                <p className="text-white para-text">
+                                    Our team needs someone who can navigate the complexities of search engines and improve our website’s visibility. As our SEO specialist, you’ll optimize our content for search engines, track and analyze performance metrics, and stay updated with SEO trends and algorithm changes. A blend of technical skills and a strategic mindset is crucial for this role. Your work will directly influence our brand’s reach and success.
+                                </p>
+                            </Col>
+                            <Col className='d-flex flex-column justify-content-center align-items-center'>
+                                <button type="button" class="btn btn-15">Apply</button>
+                            </Col>
+                        </Row>
+
+                        <p className="text-white para-text fw-bolder">
+                            Do you have it in you?
+                        </p>
+                    </Col>
+                    <Col className='d-flex flex-column justify-content-center align-items-center'>
+                        <button type="button" class="btn btn-15 my-5">Load More</button>
                     </Col>
                 </Row>
                 <Row>
@@ -120,10 +171,10 @@ const CareerCom = () => {
                                         <p className="footer-text">Follow Us:</p>
                                     </Col>
                                     <Col className="d-flex align-items-center justify-content-start">
-                                        <Image src="/images/facebook.svg" width={40} height={40} className="social" />
-                                        <Image src="/images/linkedin.svg" width={43} height={43} className="social" />
-                                        <Image src="/images/instagram.svg" width={44} height={44} className="social" />
-                                        <Image src="/images/twitter.svg" width={44} height={44} className="social" />
+                                        <Image src="/images/facebook.svg" width={40} height={40} className="social" alt='' />
+                                        <Image src="/images/linkedin.svg" width={43} height={43} className="social" alt='' />
+                                        <Image src="/images/instagram.svg" width={44} height={44} className="social" alt='' />
+                                        <Image src="/images/twitter.svg" width={44} height={44} className="social" alt='' />
                                     </Col>
                                 </Row>
                             </Container>
@@ -132,7 +183,7 @@ const CareerCom = () => {
                     </Col>
                 </Row>
                 <p className="para-text text-white">We value your privacy and will handle your information with utmost confidentiality. By submitting this form, you agree to our Privacy Policy.</p>
-            </Container>
+            </Container >
 
 
         </>

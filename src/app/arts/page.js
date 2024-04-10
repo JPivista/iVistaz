@@ -9,7 +9,7 @@ import Footer from '../../../components/Footer';
 function page() {
   return (
     <>
-      <Container fluid className="">
+      <Container fluid className="" style={{ minHeight: '100vh' }}>
         <Header1 />
         <Image src="/images/h-icon.svg" className="header-icon d-lg-flex d-none" alt='' />
         <Container className="w-80">
@@ -19,7 +19,7 @@ function page() {
         <Container className="w-80">
           <Row>
             <Col className="" lg={8}>
-              <p className="art-text fw-semibold">“It’s not what you look that matters, it’s what you see.” – Henry Albert Thoreau</p>
+              <p className="art-text fw-semibold">“It’s not what you look that matters, it’s what you see.” – Henry David Thoreau</p>
               <p className="art-text"> A picture may speak a thousand words but an action speaks louder than them. Therefore, we create digital experiences that lead to meaningful conversations and convert to qualified leads.</p>
               <Container className="mt-5 pb-5 margin-left">
                 <Link href="/arts/services" className="btn btn-11">Services</Link>

@@ -12,7 +12,7 @@ import Footer from '../../../components/Footer';
 function page() {
   return (
     <>
-      <Container fluid className="bg-black d-flex flex-column justify-content-between" style={{ minHeight: '100vh' }}>
+      <Container fluid className="bg-black d-flex flex-column justify-content-between" style={{ Height: '100vh' }}>
         <Header1 />
         <Container className="w-80">
           <h1 className="text-white fs-70 fw-bold">MASTERY</h1>
@@ -42,8 +42,8 @@ function page() {
             </section>
           </div>
           <Row className='d-flex flex-lg-row flex-column-reverse'>
-            <Col className="overflow">
-              <Image src="/images/mastery_image.svg" className="h-100 img-fluid" width={600} height={700} alt='' />
+            <Col className="overflow d-flex flex-column justify-content-end align-items-center">
+              <Image src="/images/mastery_image.svg" className=" img-fluid" width={300} height={200} alt='' />
             </Col>
             <Col className="">
               <p className="mastery-text">“Mastery demands all of a person.” – Albert Einstein</p>
@@ -57,10 +57,11 @@ function page() {
                     <Link href="/mastery/solutions" className="btn btn-13 b-width">Solutions</Link>
                   </div>
                 </div>
-              </Container>
-              <Container className="mt-5 margin-left d-lg-flex d-none">
-                <Link href="/arts" className="text">ART</Link>
-                <Link href="/performance" className="text mx-lg-5 mx-4">PERFORMANCE</Link>
+
+                <Container className="mt-5 margin-left d-lg-flex d-none">
+                  <Link href="/arts" className="text">ART</Link>
+                  <Link href="/performance" className="text mx-lg-5 mx-4">PERFORMANCE</Link>
+                </Container>
               </Container>
             </Col>
           </Row>

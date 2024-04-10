@@ -4,7 +4,7 @@ import { Container } from 'react-bootstrap'
 import Image from 'next/image'
 import { Row, Col, Button } from 'react-bootstrap'
 import Header1 from '../../../components/HeaderBlack';
-import CareerCom from '../../../components/CareersComponents/CareerCom';
+import CareerComponents from '../../../components/CareersComponents/';
 
 function page() {
 
@@ -12,7 +12,7 @@ function page() {
     <>
       <Container className="bg-black pb-5" fluid>
         <Header1 />
-        <CareerCom />
+        <CareerComponents />
       </Container>
     </>
   )

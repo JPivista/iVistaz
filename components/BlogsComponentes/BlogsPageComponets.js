@@ -30,7 +30,6 @@ const BlogsPageComponets = () => {
     return (
         <>
             <Container className="bg-black pb-5" fluid>
-                <Header1 />
                 <Container className="w-80">
                     <h1 className="fs-21 text-white fw-bold">BLOGS</h1>
                     <p className="fw-bold text-white fs-3">Stay Informed with Our Latest Insights</p>
@@ -44,7 +43,7 @@ const BlogsPageComponets = () => {
                             data.map((post) => (
                                 <div class="iv-cards col-lg-4 d-flex flex-column p-3" key={post.id}>
                                     <Image
-                                        src={post.acf.desktop_banner_image.url}
+                                        src={post.acf.thumbnail_image.url}
                                         alt={post.title.rendered}
                                         className='w-100' height={220}
                                     />
@@ -53,9 +52,14 @@ const BlogsPageComponets = () => {
                                         <h5 class="card-title">
                                             {post.title.rendered}
                                         </h5>
-
-                                        <p class="card-text three-line-show" dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
-                                        <a href="#" class="iv-link">Read more <FaArrowRight className="icons" size="25" /></a>
+                                        <div className='d-flex flex-column'>
+                                            <div>
+                                                <p class="card-text three-line-show" dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
+                                            </div>
+                                            <div className='mt-3'>
+                                                <a href={`/blogs/${post.slug}`} class="iv-link">Read more <FaArrowRight className="icons" size="25" /></a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             ))
@@ -64,6 +68,7 @@ const BlogsPageComponets = () => {
                         )}
                     </Row>
                 </Container>
+
             </Container>
         </>
     )

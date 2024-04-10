@@ -9,7 +9,7 @@ import Footer from '../../../components/Footer';
 function performance() {
   return (
     <>
-      <Container fluid className="iv-bg min-vh-100 border-bottom d-flex flex-column justify-content-between">
+      <Container fluid className="iv-bg min-vh-100 border-bottom d-flex flex-column justify-content-between" style={{ minHeight: '100vh' }}>
         <Header1 />
         <Container className="w-80 mb-5">
           <h1 className="text-white fs-70 fw-bold mb-5 text-start">PERFORMANCE</h1>
@@ -40,7 +40,7 @@ function performance() {
             </Col>
 
             <Col className="arts">
-              <Image src="/images/performance_image.svg" className="performance-img img-fluid" width={700} height={490} alt='' />
+              <Image src="/images/performance_image.svg" className="performance-img img-fluid h-100" width={500} height={290} alt='' />
             </Col>
           </Row>
 

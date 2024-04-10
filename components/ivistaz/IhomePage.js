@@ -26,28 +26,27 @@ function IhomePage() {
 
   return (
     <>
-      <>
-        {isMainSectionVisible && (
-          <Container className="bg-black h-100vh" fluid>
-            <Header />
-            <Row className="d-flex flex-column align-items-center" style={{ height: '500px' }}>
-              <Col className="d-flex flex-column justify-content-center align-items-center">
-                <h2 className="text-white fs-80 fw-bold">
-                  <CountUp end={perfomance}
-                    prefix=""
-                    className="years"
-                    suffix=" YEARS"
-                  /></h2>
-                <h2 className="text-white fs-80 fw-bold">OF PERFORMANCE</h2>
-                <h2 className="text-white fs-80 fw-bold">BACKED BY</h2>
-                <h2 className="text-white fs-80 fw-bold">MASTERY AND ART.</h2>
-                <div className='icon-scroll' onClick={handleScrollToResults}></div>
-              </Col>
-            </Row>
-          </Container>
-        )}
-        {isNextSectionVisible && <MasteryArtsPerfomancePage />}
-      </>
+      {isMainSectionVisible && (
+        <Container className="bg-black h-100vh" fluid>
+          <Header />
+          <Row className="d-flex flex-column align-items-center" style={{ height: '500px' }}>
+            <Col className="d-flex flex-column justify-content-center align-items-center">
+              <h2 className="text-white fs-80 fw-bold">
+                <CountUp end={perfomance}
+                  prefix=""
+                  className="years"
+                  suffix=" YEARS"
+                /></h2>
+              <h2 className="text-white fs-80 fw-bold">OF PERFORMANCE</h2>
+              <h2 className="text-white fs-80 fw-bold">BACKED BY</h2>
+              <h2 className="text-white fs-80 fw-bold">MASTERY AND ART.</h2>
+              <div className='icon-scroll' onClick={handleScrollToResults}></div>
+              <div class="scroll-down"></div>
+            </Col>
+          </Row>
+        </Container>
+      )}
+      {isNextSectionVisible && <MasteryArtsPerfomancePage />}
     </>
   )
 }
