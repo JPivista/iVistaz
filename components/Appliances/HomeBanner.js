@@ -1,9 +1,12 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { Container, Row, Col, Button } from 'react-bootstrap'
 import Image from 'next/image'
 import Link from 'next/link'
 import { FaArrowRight } from "react-icons/fa";
 import BannerAllPage from '../PropsShared/BannerAllPage';
+
+import ConfigData from '../../config'
+import IndustriesCategoriesComponets from '../SharedComponents/IndustriesCategoriesComponets';
 
 function HeroBanner() {
 
@@ -19,6 +22,9 @@ function HeroBanner() {
 
   return (
     <>
+
+      <IndustriesCategoriesComponets tag_id={10} />
+
       <Container className="w-80" >
         <Row className="d-flex align-items-center">
           <BannerAllPage backgroundImage={backgroundImage} bannerHeading={bannerHeading} mobileBackgroundImage={mobileBackgroundImage} />
@@ -76,7 +82,25 @@ function HeroBanner() {
           </Col>
         </Row>
       </Container>
-      <Container className="w-80 mt-5 d-flex justify-content-center">
+
+      <Container className="w-80">
+        <Row className='d-flex flex-column'>
+
+          <Col>
+
+            <div class="iv-cards">
+              <Image src="/images/1.jpg" class="card-img-top w-100 h-100 img-r" alt="..." width={200} height={200} />
+              <div class="card-body">
+                <h5 class="card-title">DIGITAL MARKETING ROUNDUP JANUARY 2022</h5>
+                <p class="card-text">In the January version of Digital Marketing Roundup, we provide the latest news and updates from the Digital marketing indust…</p>
+                <a href="#" class="iv-link">Read more <FaArrowRight className="icons" /></a>
+              </div>
+            </div>
+          </Col>
+        </Row>
+      </Container>
+
+      <Container className="w-80 mt-5 d-flex justify-content-center mb-5">
         <Link href="/case-studies" className="btn-13">View Case Studies</Link>
       </Container>
     </>

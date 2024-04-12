@@ -76,7 +76,7 @@ function HeroBanner() {
         </Row>
 
       </Container>
-      <Container className="w-80 mt-5 d-flex justify-content-center">
+      <Container className="w-80 mt-5 d-flex justify-content-center mb-5">
         <Link href="/case-studies" className="btn-13">View Case Studies</Link>
       </Container>
     </>

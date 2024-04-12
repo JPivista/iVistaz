@@ -3,11 +3,37 @@ import { Container, Row, Col, Button } from 'react-bootstrap'
 import Image from 'next/image'
 import Link from 'next/link'
 import { FaArrowRight } from "react-icons/fa";
+import IndustriesCategoriesComponets from '../SharedComponents/IndustriesCategoriesComponets';
+
+import ConfigData from '../../config'
 
 function HeroBanner() {
 
+  const [data, setData] = useState();
+
+  const siteUrl = ConfigData.wpApiUrl;
+  const serverUrl = ConfigData.SERVER;
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch(`${siteUrl}/posts?taxonomy=category&tag_ID=${tag_id}&prdouction_mode[]=${serverUrl}`);
+        const data = await response.json();
+        setData(data);
+        console.log(data);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+
+    fetchData();
+  }, [siteUrl, serverUrl]);
+
   return (
     <>
+
+      <IndustriesCategoriesComponets tag_id={10} />
+
       <Container className="bg-white banner w-80" >
         <Row className="d-flex align-items-center">
           <Col lg={7} className="pl-8">
@@ -68,8 +94,12 @@ function HeroBanner() {
           </Col>
         </Row>
 
+
+        <Col>
+        </Col>
+
       </Container>
-      <Container className="w-80 mt-5 d-flex justify-content-center">
+      <Container className="w-80 mt-5 d-flex justify-content-center mb-5">
         <Link href="/case-studies" className="btn-13">View Case Studies</Link>
       </Container>
     </>

@@ -6,7 +6,7 @@ import { Container } from 'react-bootstrap'
 const page = () => {
     return (
         <>
-            <Container fluid className="bg-white">
+            <Container fluid className="bg-white px-lg-0 px-2">
                 <SearchEngineMarketingComponents />
             </Container>
         </>
