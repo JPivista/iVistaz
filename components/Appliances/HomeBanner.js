@@ -45,9 +45,11 @@ function HeroBanner() {
           </Col>
         </Container>
       </Container>
+
       <Container className="mt-5 mb-5 w-80">
         <p className="fs-2 text-white">Here’s how we have helped appliance brands to win in the e-commerce channel:</p>
       </Container>
+
       <Container className="w-80">
         <Row>
           <Col>
@@ -85,9 +87,7 @@ function HeroBanner() {
 
       <Container className="w-80">
         <Row className='d-flex flex-column'>
-
           <Col>
-
             <div class="iv-cards">
               <Image src="/images/1.jpg" class="card-img-top w-100 h-100 img-r" alt="..." width={200} height={200} />
               <div class="card-body">
