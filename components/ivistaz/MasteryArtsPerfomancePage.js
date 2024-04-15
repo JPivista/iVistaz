@@ -12,21 +12,29 @@ import Header1 from '../HeaderBlack';
 
 const MasteryArtsPerfomancePage = () => {
 
-    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
-    const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
+    const [isMobile, setIsMobile] = useState(false); // Default to false for server-side rendering
+    const [viewportWidth, setViewportWidth] = useState(0); // Default to 0 for server-side rendering
 
     useEffect(() => {
-        const handleResize = () => {
+        // Check if window is defined to ensure execution only on the client-side
+        if (typeof window !== 'undefined') {
+            // Access window.innerWidth only in the browser environment
             setViewportWidth(window.innerWidth);
             setIsMobile(window.innerWidth <= 768); // Set isMobile based on viewport width
-        };
+            // Add event listener for window resize
+            const handleResize = () => {
+                setViewportWidth(window.innerWidth);
+                setIsMobile(window.innerWidth <= 768); // Set isMobile based on updated viewport width
+            };
+            window.addEventListener('resize', handleResize);
 
-        window.addEventListener('resize', handleResize);
+            // Cleanup function to remove event listener when component unmounts
+            return () => {
+                window.removeEventListener('resize', handleResize);
+            };
+        }
+    }, []); // Empty dependency array ensures useEffect runs only once after initial render
 
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
-    }, []);
 
     const nextSectionRef = useRef();
     const nextSectionRef1 = useRef();
